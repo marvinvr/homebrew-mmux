@@ -1,11 +1,10 @@
 # This formula is generated automatically — do not edit by hand.
-# CI in marvinvr/mmux rewrites it on every vX.Y.Z tag
-# (see .github/workflows/release.yml there).
+# CI rewrites it on every vX.Y.Z tag (see .github/workflows/release.yml).
 class Mmux < Formula
   desc "Persistent, per-directory terminal multiplexer for AI agents and dev processes"
   homepage "https://github.com/marvinvr/mmux"
   url "https://github.com/marvinvr/mmux/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+  sha256 "0503bb1e472e03489314ed5750360023280a9d7b82d35982b0d7d8abc657723c"
   license "MIT"
   head "https://github.com/marvinvr/mmux.git", branch: "main"
 

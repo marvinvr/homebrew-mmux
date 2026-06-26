@@ -10,24 +10,24 @@ class Mmux < Formula
   # prebuilt binary for (e.g. Linux arm64). The on_* blocks below override url/sha256
   # with a prebuilt binary on the platforms we do build.
   url "https://github.com/marvinvr/mmux/archive/refs/tags/v0.3.1.tar.gz"
-  sha256 "a0149368c4d066aa7f944c7884a4755afd39b1cdf1effc699c05c7cd7af9ef0b"
+  sha256 "cae0911fada00f82e6d9f4125629eb9f725322ce9db38a66e77214d43463703b"
   head "https://github.com/marvinvr/mmux.git", branch: "main"
 
   on_macos do
     on_arm do
       url "https://github.com/marvinvr/mmux/releases/download/v0.3.1/mmux-aarch64-apple-darwin.tar.gz"
-      sha256 "76bd853703b431a9adebf0731162dcf35f693246ddec8979086e0db2bf134b47"
+      sha256 "aae48187097a62432ff587a865aba2a7ffb3bf462e3e110f87076a0aa0a715f7"
     end
     on_intel do
       url "https://github.com/marvinvr/mmux/releases/download/v0.3.1/mmux-x86_64-apple-darwin.tar.gz"
-      sha256 "3e030ff162ebadac49557282a7b08cdb7094947977bf44bd15fcf08329331f68"
+      sha256 "acf20c369908464b5ea1027b005f56d6a09f8f01a97f120cb44f4cf8c316c113"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/marvinvr/mmux/releases/download/v0.3.1/mmux-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "9c755f091c4639f65ca9f5bd4d5597c9387a14046838c1845a0ca363fb264d5b"
+      sha256 "b671b216fc874064596be1e571a76b2d8e9ed2f9eadd3c93f366fd0e4d822e73"
     end
     on_arm do
       # No prebuilt binary for Linux arm64 — fall back to building from the source url.

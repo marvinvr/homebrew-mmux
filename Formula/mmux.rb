@@ -3,31 +3,31 @@
 class Mmux < Formula
   desc "Persistent, per-directory terminal multiplexer for AI agents and dev processes"
   homepage "https://github.com/marvinvr/mmux"
-  version "0.3.2"
+  version "0.3.3"
   license "MIT"
 
   # Default path: build from source. Used as a fallback on platforms we don't ship a
   # prebuilt binary for (e.g. Linux arm64). The on_* blocks below override url/sha256
   # with a prebuilt binary on the platforms we do build.
-  url "https://github.com/marvinvr/mmux/archive/refs/tags/v0.3.2.tar.gz"
-  sha256 "f042443e54406eae9a46017a264474e42661faa08c52863d6d06d27924218c27"
+  url "https://github.com/marvinvr/mmux/archive/refs/tags/v0.3.3.tar.gz"
+  sha256 "82204e710b2f9cbfb75e34eb6773564d0b961ad5b0ebc3695260848d597a6b58"
   head "https://github.com/marvinvr/mmux.git", branch: "main"
 
   on_macos do
     on_arm do
-      url "https://github.com/marvinvr/mmux/releases/download/v0.3.2/mmux-aarch64-apple-darwin.tar.gz"
-      sha256 "8a467c58bc5f6c03fdc131603c449582342b9c0588b46ee2b37c28a704793dda"
+      url "https://github.com/marvinvr/mmux/releases/download/v0.3.3/mmux-aarch64-apple-darwin.tar.gz"
+      sha256 "7db0d80242484792f200fe9c67919652aaed1a82f4a0511525d035aede6b30c6"
     end
     on_intel do
-      url "https://github.com/marvinvr/mmux/releases/download/v0.3.2/mmux-x86_64-apple-darwin.tar.gz"
-      sha256 "68eed7d3410702c970a5945f26fc698ddb44d6fef7462fb1cb54022d427dbd50"
+      url "https://github.com/marvinvr/mmux/releases/download/v0.3.3/mmux-x86_64-apple-darwin.tar.gz"
+      sha256 "f47c5da71e79e73818119655301c9f048dbb0050a3d20182e40212a6c391f569"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/marvinvr/mmux/releases/download/v0.3.2/mmux-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "aef4b9695c0773e3e3272869e2e73951b2a77bb90cf8c35f4c0f6f05e693f192"
+      url "https://github.com/marvinvr/mmux/releases/download/v0.3.3/mmux-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "8a3bcfeb4864053b03360aa558b48fdf0f793c542b6e9641238e1f712c71cc5f"
     end
     on_arm do
       # No prebuilt binary for Linux arm64 — fall back to building from the source url.

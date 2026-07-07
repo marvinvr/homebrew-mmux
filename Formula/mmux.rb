@@ -3,20 +3,20 @@
 class Mmux < Formula
   desc "Persistent, per-directory terminal multiplexer for AI agents and dev processes"
   homepage "https://github.com/marvinvr/mmux"
-  version "0.9.4"
+  version "0.10.0"
   license "GPL-3.0-or-later"
 
   # Default path: build from source. Used as a fallback on platforms we don't ship a
   # prebuilt binary for (e.g. Linux arm64). The on_* blocks below override url/sha256
   # with a prebuilt binary on the platforms we do build.
-  url "https://github.com/marvinvr/mmux/archive/refs/tags/v0.9.4.tar.gz"
-  sha256 "75533efd3e96a56412ae990add77371481289caf96ae6ae5858a9767e0895b4b"
+  url "https://github.com/marvinvr/mmux/archive/refs/tags/v0.10.0.tar.gz"
+  sha256 "cb110c10cb448f1e30ac3d501f23ac92c9aac630ee5fbb6174cc6c138badec28"
   head "https://github.com/marvinvr/mmux.git", branch: "main"
 
   on_macos do
     on_arm do
-      url "https://github.com/marvinvr/mmux/releases/download/v0.9.4/mmux-aarch64-apple-darwin.tar.gz"
-      sha256 "fdbdfd40e9a1284748fcf7c86dd270665910e6375d75204d0850b1f7d354baa6"
+      url "https://github.com/marvinvr/mmux/releases/download/v0.10.0/mmux-aarch64-apple-darwin.tar.gz"
+      sha256 "9a6314764ce93c73868d6f13a670c6353f67d2006d9b627420c1fb978748d859"
     end
     on_intel do
       # Intel Macs are EOL — no prebuilt binary. Build from the source url above.
